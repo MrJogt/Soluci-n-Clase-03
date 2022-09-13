@@ -8,15 +8,15 @@ public class Ejercicio01 : MonoBehaviour
     /*---- Busca la inconcistencia del codigo ----*/
 
     public float speed = 100f;
-    private Rigidbody2D rb_2d; 
+    public Rigidbody2D rb_2d; 
 
 
-    private void Start()
+    void Start()
     {
         rb_2d = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void Update()
     {
         //Movimiento del jugador
         float x = Input.GetAxis("Horizontal");
