@@ -11,7 +11,7 @@ public class Ejercicio05 : MonoBehaviour
     string acción = "Ataque";
     int habilidad = 1;
 
-    void EjecutarAcción()
+    public void EjecutarAcción()
     {
         switch (habilidad)
         {
