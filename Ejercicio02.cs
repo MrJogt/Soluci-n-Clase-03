@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ejercicio02 : MonoBehaviour
 {
-    /*---- Mejorá el código  ----*/
+    /*---- MejorÃ¡ el cÃ³digo  ----*/
 
     //Dato:no se que es,pero siento que algo no esta bien.
 
@@ -14,18 +14,18 @@ public class Ejercicio02 : MonoBehaviour
     int fuerzaMax;
     int agilidadMax;
 
-    private void Start()
+    void Start()
     {
         fuerzaMax = (fuerza * 2) / 5;
         agilidadMax = agilidad / 2;
     }
     
-    private void Update()
+    void Update()
     {
 
     }
 
-    private void EjecutarAtaqueEspecial()
+    public void EjecutarAtaqueEspecial()
     {
         if (fuerzaMax > -1 && agilidadMax > 20))
 
