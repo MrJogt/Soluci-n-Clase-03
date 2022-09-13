@@ -11,7 +11,7 @@ public class Ejercicio03 : MonoBehaviour
         public float Z;
         public float movimiento_x;
         private Rigidbody2D fisicas;
-        bool esta_Saltando;
+        bool esta_Saltando = false;
 
     private void Start()
         {
