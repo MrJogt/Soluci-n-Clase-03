@@ -7,7 +7,7 @@ public class Ejercicio03 : MonoBehaviour
     /*---- Ordena el Códgo  ----*/
 
         public float velocidad = 50f;
-        public float movimiento_x;
+        public float movimientoX;
         public Rigidbody2D fisicas;
         bool estaSaltando = false;
 
@@ -17,7 +17,7 @@ public class Ejercicio03 : MonoBehaviour
         }
         private void Update()
         {
-            movimiento_x = Input.GetAxis("Horizontal");
+            movimientoX = Input.GetAxis("Horizontal");
             Movimiento();
         }
 
@@ -27,13 +27,13 @@ public class Ejercicio03 : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.D))
             {
                 
-                fisicas.velocity = new Vector2(movimiento_x * velocidad, 0);
+                fisicas.velocity = new Vector2(movimientoX * velocidad, 0);
             }
             //Movimiento del jugador - Izquierda
             if (Input.GetKeyDown(KeyCode.A))
             {
                 
-                fisicas.velocity = new Vector2(movimiento_x * velocidad, 0);
+                fisicas.velocity = new Vector2(movimientoX * velocidad, 0);
             }
 
             //Salto del jugador 
