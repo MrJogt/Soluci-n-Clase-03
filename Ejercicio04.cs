@@ -10,15 +10,15 @@ public class Ejercicio04 : MonoBehaviour
     /*---- Busca otra alternativa ----*/
 
     /*Dato:Queremos saber si existe el nombre de un enemigo dentro de una lista.
-      Podriamos mejorarlo usando algun método de Linq.
+      Podriamos mejorarlo usando algun mÃ©todo de Linq.
     */
 
-    public List<string> enemigos = new List<string>() { "Orco","Araña","Golem","Goblin"};
-    string enemigo = "Araña";
+    public List<string> enemigos = new List<string>() { "Orco","AraÃ±a","Golem","Goblin"};
+    string enemigo = "AraÃ±a";
 
 
 
-    string EncontrandoEnemigo()
+    public void EncontrandoEnemigo()
     {
         
         for (int i = 0; i < enemigos.Length; i++)
@@ -26,7 +26,7 @@ public class Ejercicio04 : MonoBehaviour
             enemigos.All(e => enemigo);
         }
 
-        return "No se encontró";
+        return "No se encontrÃ³";
 
 
     }
