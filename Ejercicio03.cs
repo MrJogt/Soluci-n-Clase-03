@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ejercicio03 : MonoBehaviour
 {
-    /*---- Ordena el CÛdgo  ----*/
+    /*---- Ordena el C√≥dgo  ----*/
 
         public float speed;
         public float speed2;
@@ -36,7 +36,7 @@ public class Ejercicio03 : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A))
             {
                 
-                fisicas.velocity = new Vector2(movimiento_x, 0);
+                fisicas.velocity = new Vector2(movimiento_x * speed, 0);
             }
             //Rotacion del jugador
             if (Input.GetKeyDown(KeyCode.R))
@@ -51,7 +51,7 @@ public class Ejercicio03 : MonoBehaviour
                 //Le aplico la fuerza de salto
                 rb2d.AddForce(Vector2.up * speed2);
                 Debug.Log("Estoy saltando Wiiii");
-                //Digo que est· saltando (para que no pueda volver a saltar)
+                //Digo que est√° saltando (para que no pueda volver a saltar)
                 esta_Saltando = true;
             }
     }
