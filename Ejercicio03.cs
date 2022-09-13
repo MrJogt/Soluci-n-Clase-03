@@ -11,17 +11,17 @@ public class Ejercicio03 : MonoBehaviour
         public Rigidbody2D fisicas;
         bool estaSaltando = false;
 
-    private void Start()
+        void Start()
         {
             fisicas = GetComponent<Rigidbody2D>();
         }
-        private void Update()
+        void Update()
         {
             movimientoX = Input.GetAxis("Horizontal");
             Movimiento();
         }
 
-        private void Movimiento()
+        public void Movimiento()
         {
             //Movimiento del jugador - Der
             if (Input.GetKeyDown(KeyCode.D))
